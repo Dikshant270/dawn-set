@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://0rnmjmvx0a0q"]
+
+[ext_resource type="PackedScene" uid="uid://3bds2gxmdwpf" path="res://scenes/player.tscn" id="1_uwrxv"]
+
+[sub_resource type="TileSet" id="TileSet_a415e"]
+
+[node name="Game" type="Node2D" unique_id=3757384]
+
+[node name="Player" parent="." unique_id=1046663723 instance=ExtResource("1_uwrxv")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1863703016]
+zoom = Vector2(4, 4)
+
+[node name="TileMap" type="TileMap" parent="." unique_id=520173235]
+tile_set = SubResource("TileSet_a415e")
+format = 2
